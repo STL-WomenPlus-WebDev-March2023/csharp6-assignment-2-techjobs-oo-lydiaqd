@@ -15,6 +15,17 @@ namespace TechJobsOOAutoGraded6
 
             // TODO: Task 3: Add the two necessary constructors.
 
+        public Jobs()
+        {
+            id = nextId;
+            nextId++;
+        }
+
+        public Job(string Value): this()
+        {
+            this.Value = Value;
+        }
+
             // TODO: Task 3: Generate Equals() and GetHashCode() methods.  
 
             // TODO: Task 5: Generate custom ToString() method.
