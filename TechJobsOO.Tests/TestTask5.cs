@@ -11,7 +11,7 @@ namespace TechJobsOO.Tests
 
         //Unit Test 1:  TestToStringStartsAndEndsWithNewLine  -----------------------
 
-        /*
+
 
         [TestMethod]  //1
         public void TestToStringStartsAndEndsWithNewLineExists()
@@ -145,8 +145,6 @@ namespace TechJobsOO.Tests
             //verify
             Assert.AreEqual(text, output, "Empty string handling error");
         }
-
-        */
 
     }
 
