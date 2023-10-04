@@ -48,6 +48,16 @@ namespace TechJobsOOAutoGraded6
         {
             return Value;
         }
+
+        public static implicit operator string(CoreCompetency v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator CoreCompetency(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

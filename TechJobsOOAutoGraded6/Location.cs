@@ -35,6 +35,11 @@ namespace TechJobsOOAutoGraded6
         {
             return Value;
         }
+
+        public static implicit operator Location(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

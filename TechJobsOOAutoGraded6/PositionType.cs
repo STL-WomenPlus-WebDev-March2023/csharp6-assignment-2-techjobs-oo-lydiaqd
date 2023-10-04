@@ -1,7 +1,7 @@
 ﻿using System;
 namespace TechJobsOOAutoGraded6
 {
-	public class PositionType : IEquatable<PositionType?>
+	public class PositionType
     {
         public int Id { get; }
         private static int nextId = 1;
@@ -23,20 +23,20 @@ namespace TechJobsOOAutoGraded6
             return Value;
         }
 
-        public override bool Equals(object? obj)
+        public override bool Equals(object obj)
         {
-            return Equals(obj as PositionType);
-        }
-
-        public bool Equals(PositionType? other)
-        {
-            return other is not null &&
-                   Id == other.Id;
+            return obj is PositionType positiontype &&
+                   Id == positiontype.Id;
         }
 
         public override int GetHashCode()
         {
             return HashCode.Combine(Id);
+        }
+
+        public static implicit operator PositionType(string v)
+        {
+            throw new NotImplementedException();
         }
 
         // TODO: Task 2: Add custom Equals(), GetHashCode(), and ToString() methods.
